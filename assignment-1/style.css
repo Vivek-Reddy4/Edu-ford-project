@@ -1,0 +1,310 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body,html{
+    scroll-behavior: smooth;
+    background-color: whitesmoke;
+}
+.nav-section{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(4,9,30,0.7),rgba(4,9,30,0.7)
+        ),url(/images/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.logo{
+    cursor: pointer;
+}
+.navbar{
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links ul li{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px;
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.1s ease-in-out;
+}
+ul li a:hover{
+    border-bottom: 3px solid #D20062;
+}
+.menu{
+    display: none;
+}
+
+.hero-matter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.hero-matter h1{
+    font-size: 2rem;
+    word-spacing: 0.1em;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+}
+.hero-matter p{
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    font-family: sans-serif;
+    padding-bottom: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:#f22540;
+}
+.common-sec-intro{
+    padding-top: 100px;
+    text-align: center;
+}
+.common-sec-intro h2{
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    padding-bottom: 10px;
+}
+.common-sec-intro p{
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    padding-bottom: 60px;
+}
+
+/* first section responsive */
+
+@media (max-width:768px){
+    .nav-links{
+        display: none;
+    }
+    .menu{
+        display:block;
+        color: white;
+        margin-right: 20px;
+    }
+    .hero-matter h1{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .hero-matter p{
+        font-size: 0.7rem;
+    }
+    button{
+        padding: 7px 14px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:426px){
+    .hero-matter h1{
+        font-size:12px;
+        word-spacing: 4px;
+        font-weight: 900;
+        padding-bottom: 13px;
+       
+    }
+    .hero-matter p{
+        font-size: 9px;
+    }
+    button{
+        padding: 7px 14px;
+        font-size: 10px;
+    }
+}
+/* ends here sec1 */
+
+/* courses section starts here */
+.row{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 0px 30px ;
+    text-align: center;
+    gap: 20px;
+    
+}
+.col{
+    width: 340px;
+    box-shadow: -4px 6px 8px 1px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #FFE5E5;
+    transition: all 0.15s;
+
+} 
+.col:hover{
+     scale: 1.1;
+}
+.col h3{
+    padding-bottom: 16px;
+}
+.col p{
+    text-align: justify;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 10px;
+}
+.col a{
+    text-decoration: none;
+    color: rgb(38, 104, 227);
+}
+/* course section ends here */
+
+/* about section starts here */
+figure img{
+    border-radius: 10px;
+    
+}
+.campus img:hover{
+    box-shadow: -4px 4px 10px 4px rgba(0,0,0,0.6);
+    scale: 1.001;
+}
+
+figcaption{
+    padding-bottom: 10px;
+    color: #F37878;
+}
+#caption{
+    text-align: left;
+    color: black;
+    padding-top: 10px;
+}
+#caption h4{
+    padding-bottom: 10px;
+}
+#caption p{
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    font-family: "Roboto", sans-serif;
+}
+#facilities img:hover{
+    box-shadow: -4px 6px 8px 1px rgba(0,0,0,0.6);
+    scale: 1.01;
+}
+#testinomals{
+    display: flex;
+    flex-wrap: wrap;
+}
+.review{
+    width: 500px;
+    padding: 30px;
+    margin-bottom: 100px;
+    background-color: #f8e0e0;
+    border-radius: 10px;
+}
+.review-col{
+    display: flex;
+    padding-bottom: 20px;
+}
+.review-img img{
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.review-para p{
+    text-align: justify;
+
+}
+.review h4{
+    text-align: left;
+    padding-left: 55px;
+    padding-bottom: 20px;
+}
+.stars{
+    margin-left: 50px;
+}
+.icon{
+    color: red;
+    float: left;
+}
+
+/* enroll section starts here */
+.enroll{
+    width: 60%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 30px auto 130px;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),url(/images/banner2.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: white;
+   
+}
+.enroll h4{
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    text-align: center;
+}
+.enroll button{
+    padding: 10px 50px;
+}
+
+.about{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0px auto 30px;
+    text-align: center;
+}
+.about p{
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    font-family: "Roboto", sans-serif;
+}
+.ftily{
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#credits{
+    color: blue;
+}
